@@ -1,0 +1,5 @@
+# 忽略所有 target 目录及其内容
+**/target/
+
+# 忽略所有 src/test 目录及其内容
+**/src/test/

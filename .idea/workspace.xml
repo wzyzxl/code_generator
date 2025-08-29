@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="" />
+    <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/code_generator_admin/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/requirements/代码生成器原型.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/requirements/代码生成器原型.pdf" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,17 +37,25 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="31n4Ccjz4w0M4h7ajjMtl4BzGjw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CodeGeneratorApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/代码/github/practical_toolbox/docs/requirements/images",
+    "last_opened_file_path": "F:/代码/github/code_generator/code_generator_admin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,9 +67,31 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\代码\github\code_generator\code_generator_admin" />
+      <recent name="F:\代码\github\code_generator" />
       <recent name="F:\代码\github\practical_toolbox\docs\requirements\images" />
       <recent name="F:\代码\github\practical_toolbox\docs\requirements\" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CodeGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="code_generator_admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.web.wzy.CodeGeneratorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.com.web.wzy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.CodeGeneratorApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -71,6 +112,10 @@
       <workItem from="1756146377211" duration="42000" />
       <workItem from="1756365279073" duration="2137000" />
       <workItem from="1756371995349" duration="6821000" />
+      <workItem from="1756460928882" duration="389000" />
+      <workItem from="1756461340818" duration="1154000" />
+      <workItem from="1756463217501" duration="104000" />
+      <workItem from="1756463333197" duration="3474000" />
     </task>
     <servers />
   </component>
