@@ -69,9 +69,9 @@ npm run dev
 - 点击「生成代码」，页面展示实时进度（如「生成实体类：2/3」）
   生成完成后，可点击「预览」查看单文件代码（支持语法高亮），或点击「打包下载」获取 ZIP 压缩包
 ## 📌 扩展计划（V2 版本）
-□支持 Swagger 注解自动生成（Controller 接口添加 @Api/@ApiOperation）
-□支持 Lombok 注解配置（实体类生成 @Data/@NoArgsConstructor）
-□自定义代码模板上传（允许用户替换默认 Freemarker 模板）
+□支持 Swagger 注解自动生成（Controller 接口添加 @Api/@ApiOperation）<br>
+□支持 Lombok 注解配置（实体类生成 @Data/@NoArgsConstructor）<br>
+□自定义代码模板上传（允许用户替换默认 Freemarker 模板）<br>
 □历史生成记录保存（记录过往配置，支持重新生成）
 ## 📄 许可证
 本项目基于**MIT许可证**开源，详情见**LICENSE**文件。
