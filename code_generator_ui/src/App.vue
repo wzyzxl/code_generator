@@ -1,11 +1,18 @@
-<script setup lang="ts"></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="app">
+    <Code></Code>
+  </div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts" name="App">
+import Code from "@/components/code-generator/CodeGeneratorView.vue";
+</script>
+
+<style scoped>
+.app {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+</style>

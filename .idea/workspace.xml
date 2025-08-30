@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/stores/counter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo/数据参数.svg" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据参数.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo/数据库.svg" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据库.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo/数据表.svg" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据表.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -43,33 +54,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CodeGeneratorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/代码/github/code_generator/code_generator_admin&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CodeGeneratorApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/代码/github/code_generator/code_generator_ui/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editing.templates",
+    "ts.external.directory.path": "F:\\代码\\github\\code_generator\\code_generator_ui\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "vue.recent.templates": [
+      "Vue Composition API Component"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\代码\github\code_generator\code_generator_ui\src\assets" />
+      <recent name="F:\代码\github\code_generator\code_generator_ui\public" />
       <recent name="F:\代码\github\code_generator\code_generator_admin" />
       <recent name="F:\代码\github\code_generator" />
       <recent name="F:\代码\github\practical_toolbox\docs\requirements\images" />
-      <recent name="F:\代码\github\practical_toolbox\docs\requirements\" />
     </key>
   </component>
   <component name="RunManager">
@@ -116,7 +134,7 @@
       <workItem from="1756463217501" duration="104000" />
       <workItem from="1756463333197" duration="7747000" />
       <workItem from="1756482462593" duration="28000" />
-      <workItem from="1756482502686" duration="2251000" />
+      <workItem from="1756482502686" duration="10156000" />
     </task>
     <servers />
   </component>

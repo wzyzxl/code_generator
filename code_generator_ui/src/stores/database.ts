@@ -1,0 +1,16 @@
+import { ref } from 'vue'
+import { defineStore } from 'pinia'
+
+/**
+ * 存储数据库基本信息
+ */
+export const useDatabaseStore = defineStore('database', () => {
+  // 无需显式标注 Ref 类型，TS 会自动推断
+  const databaseId = ref(-1)
+  const databaseType = ref('')
+  const host = ref('')
+  const port = ref(-1)
+  const databaseName = ref('')
+
+  return { databaseId, databaseType, host, port, databaseName }
+})
