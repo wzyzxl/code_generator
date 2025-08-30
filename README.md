@@ -21,7 +21,26 @@ git clone https://github.com/wzyzxl/code_generator.git
 cd code_generator
 ```
 ### 2. 后端启动(Spring Boot)
-#### 步骤1：配置数据库连接
+#### 步骤1：创建默认表
+将`./code_generato/sql`下的`.sql`文件导入到数据库中，或者通过下面sql语句创建数据表：
+```sql
+DROP TABLE IF EXISTS `database_config`;
+CREATE TABLE `database_config` (
+  `id` bigint unsigned NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `config_name` varchar(16) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '配置名称',
+  `database_type` enum('MYSQL','POSTGRESQL') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '数据库类型，MYSQL或POSTGRESQL',
+  `host` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '主机地址',
+  `port` int NOT NULL COMMENT '端口号',
+  `database_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL COMMENT '数据库名称',
+  `creator` varchar(64) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '创建者标识（V1版本不涉及，可按需删除）',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间（V1版本不涉及，可按需删除）',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间（V1版本不涉及，可按需删除）',
+  `is_delete` tinyint(1) DEFAULT '0' COMMENT '删除标志，0表示未删除，1表示删除，（V1版本不涉及，可按需删除）',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `config_name_unique` (`config_name`) COMMENT '唯一配置名'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='用于存储页面中数据库的相关配置，方便后续直接连接相关配置数据库，而不用重复连接';
+```
+#### 步骤2：配置数据库连接
 进入后端目录 `./code_generator/code_generator_admin/src/main/resources`，修改 `application.yml` 中的数据库配置（本地开发环境）：
 ```yaml
 spring:
@@ -32,7 +51,7 @@ spring:
     password: 你的数据库密码
     type: com.alibaba.druid.pool.DruidDataSource  # Druid 连接池
 ```
-#### 步骤2：构建并启动
+#### 步骤3：构建并启动
 ```bash
 # 进入后端目录
 cd code_generator_admin
