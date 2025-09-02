@@ -33,8 +33,19 @@ spring:
         login-username: admin
         login-password: adminrcec
 
+# MyBatis 配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: cn.com.wzy.web.dto
+  configuration:
+    map-underscore-to-camel-case: true
+
+# 打印日志
 logging:
   level:
-    com.alibaba.druid: DEBUG
-    org.springframework.jdbc: DEBUG
-    cn.com.web.wzy: DEBUG
+    root: error      # 设置全局日志级别
+  file:
+    path: ./log  # 日志输出路径
+  pattern:
+    file: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'  # 日志文件的格式
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'  # 控制台输出的日志格式

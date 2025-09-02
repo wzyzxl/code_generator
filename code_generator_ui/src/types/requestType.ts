@@ -17,4 +17,5 @@ export default interface RequestType {
   createService: boolean,
   createSimpleSql: boolean,
   prePackageName: string
+  fileName: string
 }

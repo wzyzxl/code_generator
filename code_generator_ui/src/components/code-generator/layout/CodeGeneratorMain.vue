@@ -45,7 +45,8 @@ const form: Ref<RequestType> = ref({
   createController: false,
   createService: false,
   createSimpleSql: false,
-  prePackageName: ''
+  prePackageName: '',
+  fileName: ''
 });
 
 console.log(form.value);

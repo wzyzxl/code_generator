@@ -10,11 +10,10 @@
     <description>代码生成器</description>
 
     <properties>
-        <springboot.version>3.5.5</springboot.version>
         <java.version>17</java.version>
         <mybatis.spring.version>3.0.5</mybatis.spring.version>
         <druid.version>1.2.27</druid.version>
-        <mysql.version>8.0.33</mysql.version>
+        <mysql.version>8.2.0</mysql.version>
         <postgresql.version>42.7.7</postgresql.version>
         <freemarker.version>2.3.34</freemarker.version>
     </properties>
@@ -22,7 +21,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>${springboot.version}</version>
+        <version>3.5.5</version>
         <relativePath/>
     </parent>
 
@@ -45,6 +44,12 @@
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>${mybatis.spring.version}</version>
+        </dependency>
+
+        <!-- 验证 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
         <!-- 数据库连接池 Druid -->
