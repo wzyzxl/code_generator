@@ -12,7 +12,8 @@ public class BaseController {
     // 用于统一处理抛出的异常
     @ExceptionHandler(ServiceException.class)
     public ResponseBodyEntity<Void> handleException(Throwable e) {
-        if (e instanceof DatabaseTypeNotFoundException || e instanceof ConnectionInformationErrorException) {
+        if (e instanceof DatabaseTypeNotFoundException || e instanceof ConnectionInformationErrorException ||
+        e instanceof WriteInformationErrorException) {
             return ResponseBodyEntity.error(400, e.getMessage());
         } else if (e instanceof ConfigurationNameDuplicateException) {
             return ResponseBodyEntity.error(409, e.getMessage());

@@ -4,6 +4,7 @@ import cn.com.web.wzy.entity.ResponseBodyEntity;
 import cn.com.web.wzy.service.CodeService;
 import cn.com.web.wzy.vo.RequestVo;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,7 +31,7 @@ public class CodeController extends BaseController {
      * @return 文件名
      */
     @PostMapping("/filenames")
-    public ResponseBodyEntity<List<String>> filenames(RequestVo requestVo) {
+    public ResponseBodyEntity<List<String>> filenames(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.filenames(requestVo));
     }
 
@@ -41,7 +42,7 @@ public class CodeController extends BaseController {
      * @return 代码
      */
     @PostMapping("/content")
-    public ResponseBodyEntity<Map<String, String>> content(RequestVo requestVo) {
+    public ResponseBodyEntity<Map<String, String>> content(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.content(requestVo));
     }
 
@@ -52,7 +53,7 @@ public class CodeController extends BaseController {
      * @return 下载链接
      */
     @PostMapping("/download")
-    public ResponseBodyEntity<Map<String, String>> download(RequestVo requestVo) {
+    public ResponseBodyEntity<Map<String, String>> download(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.download(requestVo));
     }
 }

@@ -1,25 +1,18 @@
 package cn.com.web.wzy.vo;
 
 import cn.com.web.wzy.enums.DatabaseType;
-import jakarta.validation.constraints.NotBlank;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 public class RequestVo implements Serializable {
-    private int databaseId;                                         // 数据库连接id
-
-    @NotBlank(message = "数据库类型不能为空")
-    private DatabaseType databaseType;                          // 数据库类型
-
-    @NotBlank(message = "主机不能为空")
+    private String databaseId;                                      // 数据库连接id
+    private DatabaseType databaseType;                              // 数据库类型
     private String host;                                            // 主机
-
-    @NotBlank(message = "端口不能为空")
-    private int port;                                               // 端口
-
-    @NotBlank(message = "数据库名不能为空")
+    private Integer port;                                           // 端口
     private String databaseName;                                    // 数据库名
+    private String username;                                        // 用户名
+    private String password;                                        // 密码
     private boolean changeFlag;                                     // 数据库配置信息更改
     private String pattern;                                         // 模式
     private String table;                                           // 表名
@@ -35,18 +28,11 @@ public class RequestVo implements Serializable {
     public RequestVo() {
     }
 
-    public RequestVo(DatabaseType databaseType, String host, int port, String databaseName) {
-        this.databaseType = databaseType;
-        this.host = host;
-        this.port = port;
-        this.databaseName = databaseName;
-    }
-
-    public int getDatabaseId() {
+    public String getDatabaseId() {
         return databaseId;
     }
 
-    public void setDatabaseId(int databaseId) {
+    public void setDatabaseId(String databaseId) {
         this.databaseId = databaseId;
     }
 
@@ -66,11 +52,11 @@ public class RequestVo implements Serializable {
         this.host = host;
     }
 
-    public int getPort() {
+    public Integer getPort() {
         return port;
     }
 
-    public void setPort(int port) {
+    public void setPort(Integer port) {
         this.port = port;
     }
 
@@ -80,6 +66,22 @@ public class RequestVo implements Serializable {
 
     public void setDatabaseName(String databaseName) {
         this.databaseName = databaseName;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public boolean isChangeFlag() {
@@ -175,12 +177,12 @@ public class RequestVo implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         RequestVo requestVo = (RequestVo) o;
-        return databaseId == requestVo.databaseId && port == requestVo.port && changeFlag == requestVo.changeFlag && createEntity == requestVo.createEntity && createRepository == requestVo.createRepository && createController == requestVo.createController && createService == requestVo.createService && createSimpleSql == requestVo.createSimpleSql && databaseType == requestVo.databaseType && Objects.equals(host, requestVo.host) && Objects.equals(databaseName, requestVo.databaseName) && Objects.equals(pattern, requestVo.pattern) && Objects.equals(table, requestVo.table) && Objects.equals(configName, requestVo.configName) && Objects.equals(prePackageName, requestVo.prePackageName) && Objects.equals(fileName, requestVo.fileName);
+        return databaseType == requestVo.databaseType && Objects.equals(host, requestVo.host) && Objects.equals(port, requestVo.port) && Objects.equals(databaseName, requestVo.databaseName) && Objects.equals(username, requestVo.username) && Objects.equals(password, requestVo.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(databaseId, databaseType, host, port, databaseName, changeFlag, pattern, table, configName, createEntity, createRepository, createController, createService, createSimpleSql, prePackageName, fileName);
+        return Objects.hash(databaseType, host, port, databaseName, username, password);
     }
 
     @Override
@@ -191,6 +193,8 @@ public class RequestVo implements Serializable {
                 ", host='" + host + '\'' +
                 ", port=" + port +
                 ", databaseName='" + databaseName + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", changeFlag=" + changeFlag +
                 ", pattern='" + pattern + '\'' +
                 ", table='" + table + '\'' +

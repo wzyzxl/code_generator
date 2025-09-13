@@ -1,7 +1,6 @@
 package cn.com.web.wzy.service;
 
 import cn.com.web.wzy.vo.RequestVo;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
@@ -10,7 +9,6 @@ import java.util.Map;
 /**
  * 数据库操作Service层
  */
-@Service
 public interface DatabaseService {
     /**
      * 获取数据库类型
