@@ -49,3 +49,13 @@ logging:
   pattern:
     file: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'  # 日志文件的格式
     console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'  # 控制台输出的日志格式
+
+# 代码生成时的一些额外基本信息
+code-generator:
+  author: wzy
+  date-formatter: yyyy-MM-dd HH:mm:ss
+  output-path: F:/files
+
+# 文件服务器
+file-server:
+  url: http://localhost:8090

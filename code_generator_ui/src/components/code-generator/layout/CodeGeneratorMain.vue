@@ -1,17 +1,20 @@
 <template>
   <el-row>
     <el-col :span="8">
-      <ConnectionPanel></ConnectionPanel>
+      <ConnectionPanel :form="form"></ConnectionPanel>
     </el-col>
     <el-col :span="8">
-      <StructurePanel></StructurePanel>
+      <StructurePanel :form="form"></StructurePanel>
     </el-col>
     <el-col :span="8">
-      <ConfigPanel></ConfigPanel>
+      <ConfigPanel :form="form" @changeFileNames="changeFileNames" @showCodeBox="showCodeBox"
+        @hideCodeBox="hideCodeBox"></ConfigPanel>
     </el-col>
   </el-row>
+  <hr>
+  <!-- 代码区域 -->
   <el-row>
-    <CodePreview></CodePreview>
+    <CodePreview :form="form" :fileNames="fileNames" v-if="showCode"></CodePreview>
   </el-row>
 </template>
 
@@ -22,34 +25,34 @@ import StructurePanel
   from "@/components/code-generator/sections/structure-panel/StructurePanel.vue";
 import ConfigPanel from "@/components/code-generator/sections/config-panel/ConfigPanel.vue";
 import CodePreview from "@/components/code-generator/sections/preview-panel/CodePreview.vue";
-import type RequestType from "@/types/requestType.ts";
-import {type Ref, ref} from "vue";
-import {useDatabaseStore} from "@/stores/database.ts";
+import type RequestType from '@/types/request_type';
+import { ref, type Ref } from "vue";
 
-// 调用数据库配置仓库
-const databaseStore = useDatabaseStore();
+// 声明接收 form prop
+const props = defineProps<{
+  form: RequestType
+}>();
 
-// 定义向后端请求的form
-const form: Ref<RequestType> = ref({
-  databaseId: databaseStore.databaseId,
-  databaseType: databaseStore.databaseType,
-  host: databaseStore.host,
-  port: databaseStore.port,
-  databaseName: databaseStore.databaseName,
-  changeFlag: true,
-  pattern: '',
-  table: '',
-  configName: '',
-  createEntity: true,
-  createRepository: true,
-  createController: false,
-  createService: false,
-  createSimpleSql: false,
-  prePackageName: '',
-  fileName: ''
-});
+// 文件名
+const fileNames: Ref<Array<string>> = ref([]);
 
-console.log(form.value);
+// 显示代码
+let showCode: Ref<boolean> = ref(false);
+
+// 更改文件名称
+function changeFileNames(res: Array<string>) {
+  fileNames.value = res;
+}
+
+// 显示预览框
+function showCodeBox() {
+  showCode.value = true;
+}
+
+// 隐藏预览框
+function hideCodeBox() {
+  showCode.value = false;
+}
 </script>
 
 <style scoped></style>

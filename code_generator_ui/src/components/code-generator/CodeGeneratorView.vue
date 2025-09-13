@@ -1,10 +1,10 @@
 <template>
   <div class="common-layout">
     <div class="header">
-      <CodeGeneratorHeader></CodeGeneratorHeader>
+      <CodeGeneratorHeader :form="form"></CodeGeneratorHeader>
     </div>
     <div class="main">
-      <CodeGeneratorMain></CodeGeneratorMain>
+      <CodeGeneratorMain :form="form"></CodeGeneratorMain>
     </div>
   </div>
 </template>
@@ -13,17 +13,41 @@
 <script setup lang="ts" name="CodeGeneratorView">
 import CodeGeneratorHeader from "@/components/code-generator/layout/CodeGeneratorHeader.vue";
 import CodeGeneratorMain from "@/components/code-generator/layout/CodeGeneratorMain.vue";
+import type RequestType from "@/types/request_type";
+import { ref, type Ref } from "vue";
 
-// 表单数据
+// 定义向后端请求的form
+const form: Ref<RequestType> = ref({
+  databaseId: null,
+  databaseType: 'MYSQL',
+  host: '127.0.0.1',
+  port: 3306,
+  databaseName: 'code_generator',
+  username: 'root',
+  password: 'wzy@123',
+  changeFlag: true,
+  pattern: '',
+  table: 'database_config',
+  configName: '',
+  createEntity: true,
+  createRepository: true,
+  createController: false,
+  createService: false,
+  createSimpleSql: false,
+  prePackageName: '',
+  fileName: ''
+});
 </script>
 
 <style scoped>
 .common-layout {
   height: 100%;
 }
+
 .header {
   height: 100px;
 }
+
 .main {
   height: calc(100% - 100px);
 }

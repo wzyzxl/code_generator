@@ -2,11 +2,13 @@
  * 请求类型
  */
 export default interface RequestType {
-  databaseId: number,
+  databaseId: string | null,
   databaseType: string,
   host: string,
   port: number,
   databaseName: string,
+  username: string,
+  password: string,
   changeFlag: boolean,
   pattern: string,
   table: string,

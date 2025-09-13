@@ -1,11 +1,11 @@
 <template>
   <div class="app">
-    <Code></Code>
+    <CodeGeneratorView></CodeGeneratorView>
   </div>
 </template>
 
 <script setup lang="ts" name="App">
-import Code from "@/components/code-generator/CodeGeneratorView.vue";
+import CodeGeneratorView from "@/components/code-generator/CodeGeneratorView.vue";
 </script>
 
 <style scoped>

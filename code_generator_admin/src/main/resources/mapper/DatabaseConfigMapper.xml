@@ -14,4 +14,32 @@
         <result column="is_delete" property="isDelete" />
     </resultMap>
 
+    <select id="queryByConfigName" resultType="int">
+        SELECT COUNT(*) FROM database_config
+        <where>
+            config_name = #{configName}
+        </where>
+    </select>
+
+    <insert id="insertDatabaseConfig">
+        INSERT INTO database_config(
+            config_name,
+            database_type,
+            host,
+            port,
+            database_name,
+            username,
+            password,
+            create_time
+        )VALUES(
+            #{configName},
+            #{databaseType},
+            #{host},
+            #{port},
+            #{databaseName},
+            #{username},
+            #{password},
+            NOW()
+        )
+    </insert>
 </mapper>

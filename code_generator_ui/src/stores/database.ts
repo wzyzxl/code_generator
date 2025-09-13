@@ -11,6 +11,8 @@ export const useDatabaseStore = defineStore('database', () => {
   const host = ref('')
   const port = ref(-1)
   const databaseName = ref('')
+  const username = ref('');
+  const password = ref('');
 
-  return { databaseId, databaseType, host, port, databaseName }
+  return { databaseId, databaseType, host, port, databaseName, username, password }
 })
