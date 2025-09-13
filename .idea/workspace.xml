@@ -5,75 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/constant/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/dao/JdbcExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/entity/DatabaseConnectionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/entity/DatabaseFieldInfoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/entity/Sql2JavaMethodsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/entity/Sql2XmlMethodEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/entity/SqlAndParamsEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/BaseTemplateGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/ControllerTemplateGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/EntityGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/JavaMapperGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/ServiceImplTemplateGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/ServiceTemplateGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/template/XmlMapperGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/DatabaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/ThreadPoolUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/ControllerTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/EntityTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/JavaMapperTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/ServiceImplTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/ServiceTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/template/XmlMapperTemplate.ftl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-06.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-07.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-08.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-09.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-11.0.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/spring.log.2025-09-12.0.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/enums/DatabaseType.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/enums/DatabaseType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/mapper/DatabaseConfigMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/mapper/DatabaseConfigMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/DatabaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/DatabaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/impl/ICodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/impl/ICodeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/impl/IDatabaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/service/impl/IDatabaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/vo/RequestVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/vo/RequestVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/resources/mapper/DatabaseConfigMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/mapper/DatabaseConfigMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/components.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据参数.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据库.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/assets/logo/数据表.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/CodeGeneratorView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/CodeGeneratorView.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorHeader.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorMain.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorMain.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/config-panel/ConfigPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/config-panel/ConfigPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/connection-panel/ConnectionPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/connection-panel/ConnectionPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/connection-panel/DatabaseTypeSelect.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/CodePreview.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/CodePreview.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/FileTabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/FileTabs.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/PreviewPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/preview-panel/PreviewPanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/structure-panel/SchemaSelect.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/structure-panel/StructurePanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/structure-panel/StructurePanel.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/sections/structure-panel/TableSearch.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/router/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/stores/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/stores/database.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/types/requestType.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -225,7 +157,7 @@
       <workItem from="1757729257892" duration="300000" />
       <workItem from="1757730304366" duration="688000" />
       <workItem from="1757731056969" duration="860000" />
-      <workItem from="1757731932045" duration="1114000" />
+      <workItem from="1757731932045" duration="1330000" />
     </task>
     <servers />
   </component>
