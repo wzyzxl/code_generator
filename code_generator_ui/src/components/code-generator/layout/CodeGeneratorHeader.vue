@@ -7,6 +7,8 @@
     </el-col>
     <el-col :span="4">
       <div class="save-config-box">
+        <el-link href="http://localhost:8080/swagger-ui/index.html" target="_blank">查看API</el-link>
+        &nbsp;&nbsp;
         <el-button type="primary" @click="dialogVisible = true">保存配置</el-button>
       </div>
     </el-col>

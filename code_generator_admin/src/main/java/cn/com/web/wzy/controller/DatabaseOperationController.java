@@ -3,6 +3,7 @@ package cn.com.web.wzy.controller;
 import cn.com.web.wzy.entity.ResponseBodyEntity;
 import cn.com.web.wzy.service.DatabaseService;
 import cn.com.web.wzy.vo.RequestVo;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -25,6 +26,7 @@ public class DatabaseOperationController extends BaseController {
      *
      * @return 数据类型列表
      */
+    @Operation(summary = "查询数据库类型")
     @GetMapping("/types")
     public ResponseBodyEntity<List<Map<String, String>>> types() {
         return ResponseBodyEntity.ok(databaseService.types());
@@ -36,6 +38,7 @@ public class DatabaseOperationController extends BaseController {
      * @param requestVo 请求
      * @return 连接情况
      */
+    @Operation(summary = "测试连接")
     @PostMapping("/connections")
     public ResponseBodyEntity<Map<String, Object>> connections(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(databaseService.connections(requestVo));
@@ -47,6 +50,7 @@ public class DatabaseOperationController extends BaseController {
      * @param requestVo 请求
      * @return mos
      */
+    @Operation(summary = "获取模式")
     @PostMapping("/patterns")
     public ResponseBodyEntity<List<String>> patterns(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(databaseService.patterns(requestVo));
@@ -58,6 +62,7 @@ public class DatabaseOperationController extends BaseController {
      * @param requestVo 请求
      * @return 表名
      */
+    @Operation(summary = "获取表名")
     @PostMapping("/tables")
     public ResponseBodyEntity<List<String>> tables(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(databaseService.tables(requestVo));
@@ -69,6 +74,7 @@ public class DatabaseOperationController extends BaseController {
      * @param requestVo 请求
      * @return 保存状态
      */
+    @Operation(hidden = true)
     @PostMapping("/save")
     public ResponseBodyEntity<Map<String, Object>> save(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(databaseService.save(requestVo));

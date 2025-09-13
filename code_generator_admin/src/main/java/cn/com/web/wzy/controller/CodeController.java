@@ -3,6 +3,7 @@ package cn.com.web.wzy.controller;
 import cn.com.web.wzy.entity.ResponseBodyEntity;
 import cn.com.web.wzy.service.CodeService;
 import cn.com.web.wzy.vo.RequestVo;
+import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,7 @@ public class CodeController extends BaseController {
      * @param requestVo 请求
      * @return 文件名
      */
+    @Operation(summary = "获取文件名称")
     @PostMapping("/filenames")
     public ResponseBodyEntity<List<String>> filenames(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.filenames(requestVo));
@@ -41,6 +43,7 @@ public class CodeController extends BaseController {
      * @param requestVo 请求
      * @return 代码
      */
+    @Operation(summary = "根据文件名获取代码")
     @PostMapping("/content")
     public ResponseBodyEntity<Map<String, String>> content(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.content(requestVo));
@@ -52,6 +55,7 @@ public class CodeController extends BaseController {
      * @param requestVo 请求
      * @return 下载链接
      */
+    @Operation(hidden = true)
     @PostMapping("/download")
     public ResponseBodyEntity<Map<String, String>> download(@RequestBody RequestVo requestVo) {
         return ResponseBodyEntity.ok(codeService.download(requestVo));
