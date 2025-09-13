@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +56,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Maven.code_generator_admin [clean].executor": "Run",
+    "Maven.code_generator_admin [package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -157,7 +159,7 @@
       <workItem from="1757729257892" duration="300000" />
       <workItem from="1757730304366" duration="688000" />
       <workItem from="1757731056969" duration="860000" />
-      <workItem from="1757731932045" duration="1330000" />
+      <workItem from="1757731932045" duration="2957000" />
     </task>
     <servers />
   </component>
