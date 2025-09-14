@@ -13,13 +13,15 @@ public class BaseController {
     @ExceptionHandler(ServiceException.class)
     public ResponseBodyEntity<Void> handleException(Throwable e) {
         if (e instanceof DatabaseTypeNotFoundException || e instanceof ConnectionInformationErrorException ||
-        e instanceof WriteInformationErrorException) {
+                e instanceof WriteInformationErrorException) {
             return ResponseBodyEntity.error(400, e.getMessage());
         } else if (e instanceof ConfigurationNameDuplicateException) {
             return ResponseBodyEntity.error(409, e.getMessage());
         } else if (e instanceof FileNotFoundException) {
             return ResponseBodyEntity.error(404, e.getMessage());
         } else if (e instanceof FileGenerationErrorException) {
+            return ResponseBodyEntity.error(500, e.getMessage());
+        } else if (e instanceof FileInaccessibleException) {
             return ResponseBodyEntity.error(500, e.getMessage());
         } else {
             return ResponseBodyEntity.error(e.getMessage());

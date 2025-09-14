@@ -1,11 +1,12 @@
 <template>
   <div class="app">
-    <CodeGeneratorView></CodeGeneratorView>
+    <RouterView></RouterView>
   </div>
 </template>
 
 <script setup lang="ts" name="App">
-import CodeGeneratorView from "@/components/code-generator/CodeGeneratorView.vue";
+import { RouterView } from "vue-router";
+
 </script>
 
 <style scoped>

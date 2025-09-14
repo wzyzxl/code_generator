@@ -1,11 +1,9 @@
 package cn.com.web.wzy.utils;
 
 import cn.com.web.wzy.service.ex.FileGenerationErrorException;
+import cn.com.web.wzy.service.ex.FileNotFoundException;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
@@ -71,6 +69,58 @@ public class FileUtils {
                 }
             }
         }
+    }
+
+    /**
+     * 删除指定路径的文件
+     *
+     * @param filePath 要删除的文件路径
+     * @return 如果文件删除成功返回true，否则返回false
+     */
+    public static boolean deleteFile(String filePath) {
+        File file = new File(filePath);
+
+        // 检查文件是否存在
+        if (!file.exists()) {
+            throw new FileNotFoundException();
+        }
+
+        // 删除文件
+        return file.delete();
+    }
+
+    /**
+     * 删除指定路径的文件夹及其所有内容
+     *
+     * @param directoryPath 要删除的文件夹路径
+     * @return 如果文件夹删除成功返回true，否则返回false
+     */
+    public static boolean deleteDirectory(String directoryPath){
+        File directory = new File(directoryPath);
+
+        // 检查文件夹是否存在
+        if (!directory.exists()) {
+            throw new FileNotFoundException();
+        }
+
+        // 递归删除文件夹内的所有文件和子文件夹
+        File[] files = directory.listFiles();
+        if (files != null) {
+            for (File file : files) {
+                if (file.isDirectory()) {
+                    // 递归删除子文件夹
+                    deleteDirectory(file.getAbsolutePath());
+                } else {
+                    // 删除文件
+                    if (!file.delete()) {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        // 删除空文件夹
+        return directory.delete();
     }
 
     /**

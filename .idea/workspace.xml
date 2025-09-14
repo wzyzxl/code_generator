@@ -6,11 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/CodeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/CodeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/DatabaseOperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/DatabaseOperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/utils/FileUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_generator_ui/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/App.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/components/code-generator/layout/CodeGeneratorHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/router/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +101,7 @@
       <recent name="F:\代码\github\practical_toolbox\docs\requirements\images" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.com.web.wzy.service" />
       <recent name="cn.com.web.wzy.mapping" />
     </key>
   </component>
@@ -163,7 +165,7 @@
       <workItem from="1757729257892" duration="300000" />
       <workItem from="1757730304366" duration="688000" />
       <workItem from="1757731056969" duration="860000" />
-      <workItem from="1757731932045" duration="5618000" />
+      <workItem from="1757731932045" duration="11640000" />
     </task>
     <servers />
   </component>
