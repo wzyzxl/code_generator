@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="Changes">
+    <list default="true" id="43fcb677-3f83-448b-97bb-576f1dd569e4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/java/cn/com/web/wzy/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code_generator_admin/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_admin/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/components.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/hooks/useDatabase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/hooks/useDatabase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code_generator_ui/src/stores/database.ts" beforeDir="false" afterPath="$PROJECT_DIR$/code_generator_ui/src/stores/database.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/spring.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/spring.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/database_config.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/database_config.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +165,7 @@
       <workItem from="1757731056969" duration="860000" />
       <workItem from="1757731932045" duration="12101000" />
       <workItem from="1758676149470" duration="1342000" />
-      <workItem from="1758694644606" duration="3626000" />
+      <workItem from="1758694644606" duration="4854000" />
     </task>
     <servers />
   </component>

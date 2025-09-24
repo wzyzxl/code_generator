@@ -15,7 +15,7 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         // 允许来自 localhost:5173 的跨域请求
-        config.addAllowedOriginPattern("http://localhost:5173");
+        config.addAllowedOriginPattern("*");
         config.setAllowCredentials(true); // 允许携带凭证（如 Cookie）
         config.addAllowedMethod("*");     // 允许所有 HTTP 方法
         config.addAllowedHeader("*");     // 允许所有请求头
