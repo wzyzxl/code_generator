@@ -1,4 +1,4 @@
-import { ref } from 'vue'
+import { ref, type Ref } from 'vue'
 import { defineStore } from 'pinia'
 
 /**
@@ -6,7 +6,7 @@ import { defineStore } from 'pinia'
  */
 export const useDatabaseStore = defineStore('database', () => {
   // 无需显式标注 Ref 类型，TS 会自动推断
-  const databaseId = ref(-1)
+  const databaseId: Ref<string | null> = ref(null)
   const databaseType = ref('')
   const host = ref('')
   const port = ref(-1)

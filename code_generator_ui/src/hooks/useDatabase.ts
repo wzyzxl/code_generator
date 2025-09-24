@@ -98,7 +98,7 @@ export default function () {
     if (verifyResult) {
       try {
         const res = await databaseConnections(form);
-        const result: { state: boolean, databaseId: number } = res.data.data;
+        const result: { state: boolean, databaseId: string | null } = res.data.data;
         // 验证接口状态码
         if (res.data.code !== 200 || !result.state) {
           ElMessage.error("连接数据库出错，错误信息：" + (res.data.message || "未知错误"));
